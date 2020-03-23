@@ -9,7 +9,7 @@ Testing automation with Ansible.
 
 #### WORKFLOW:
 yum updates on all hosts  
-install httpd on the webservers
+install httpd on the webservers  
 check if apache works  
 upload hello.html to the webservers  
 create index.html on all webservers  
