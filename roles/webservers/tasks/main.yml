@@ -1,2 +1,9 @@
 ---
 # tasks file for roles/webservers
+- name: See directory content
+  command: ls -la $HOME
+  register: dir_contents
+
+- name: Debug directory contents
+  debug:
+    msg: "{{ dir_contents }}"
