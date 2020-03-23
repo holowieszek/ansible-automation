@@ -3,11 +3,12 @@
 - name: Installing services
   yum:
     name:
-      - httpd
-      - php
+    - httpd
+    - php
     state: present
+    
 - name: Check if apache works
   service:
     name: httpd
-    staet: started
+    state: started
     enabled: yes

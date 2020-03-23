@@ -3,4 +3,8 @@
     become: true
     roles:
       - webservers
+
+  - hosts: loadbalancers
+    become: true
+    roles:
       - loadbalancers
