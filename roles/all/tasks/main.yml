@@ -4,3 +4,7 @@
   yum:
     name: '*'
     state: latest
+
+- name: Ping all serverrs
+  action: ping
+  tags: ping
