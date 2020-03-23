@@ -1,2 +1,13 @@
 ---
 # tasks file for roles/loadbalancers
+- name: Installing services
+  yum:
+    name:
+      - httpd
+      - php
+    state: present
+- name: Check if apache works
+  service:
+    name: httpd
+    staet: started
+    enabled: yes
