@@ -1,4 +1,9 @@
 ---
+  - hosts: webservers:loadbalancers
+    become: true
+    roles:
+      - all
+
   - hosts: webservers
     become: true
     roles:
