@@ -16,3 +16,8 @@
     src: ../files/hello.html
     dest: /var/www/html
     mode: 0755
+
+- name: Create index.html
+  copy:
+    dest: /var/www/html/index.html
+    content: "<h1>Hello {{ ansible_hostname }}</h1>"
