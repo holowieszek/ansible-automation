@@ -4,8 +4,15 @@
   yum:
     name: httpd
     state: present
+
 - name: Check if apache works
   service:
     name: httpd
     state: started
     enabled: yes
+
+- name: Upload application file
+  copy:
+    src: ../files/hello.html
+    dest: /var/www/html
+    mode: 0755
