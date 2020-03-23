@@ -14,6 +14,6 @@ check if apache works
 upload hello.html to the webservers  
 create index.html on all webservers  
 install httpd & php on the loadbalancer(s)  
-check if apache works
+check if apache works  
 configure loadbalancer  
 restart loadbalancer(s)
