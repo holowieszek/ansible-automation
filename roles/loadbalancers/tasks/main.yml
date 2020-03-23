@@ -12,3 +12,12 @@
     name: httpd
     state: started
     enabled: yes
+  
+- name: Setup loadbalancer
+  template:
+    src: ../templates/loadbalancer.j2
+    dest: /etc/httpd/conf.d/lb.conf
+    owner: bin
+    group: wheel
+    mode: 064
+  notify: Restart apache
